@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissor</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-Cv8qaKjL.css">
+</head>
+<body class="flex flex-col items-center justify-center">
+    <!-- Board -->
+    <div class="flex flex-col justify-center items-center bg-white w-full h-[630px]" id="board">
+        <!-- Score -->
+        <div class="score font-bold flex gap-x-12 bg-slate-800 px-4 py-1 justify-center items-center">
+            <div id="user-score" class="text-3xl text-white">User 0 </div>
+            <div id="comp-score" class="text-3xl text-white">Comp 0</div>
+        </div>
+        <!-- Select choice -->
+        <div class="container flex mt-10 gap-14 justify-center items-center">
+            <div class="choice w-28 h-28 flex flex-col mb-3  justify-center items-center text-black text-xl font-bold font-mono"
+                id="rock"><img src="./image/rock animation.gif" alt="">Rock</div>
+            <div class="choice w-28 h-28  flex flex-col mb-3 justify-center items-center text-black text-xl font-bold font-mono"
+                id="paper"><img src="./image/paper animation.gif" alt="">Paper</div>
+            <div class="choice w-28 h-28  flex flex-col mb-3 justify-center items-center text-black text-xl font-bold font-mono"
+                id="scissor"><img src="./image/scissor animation.gif" alt="">Scissor</div>
+        </div>
+        <!-- result -->
+        <div class="flex flex-col justify-center items-center">
+            <div id="choosed" class="text-2xl font-sans text-center capitalize font-bold mb-3"></div>
+            <video width="150" id="myvideo">
+                <source src="" class="w-40 h-40 hidden my-auto" id="anim" type="video/mp4">
+            </video>
+            <h2 id="result" class="text-xl text-center absolute text-black capitalize font-bold"></h2>
+        </div>
+        <!-- Reset button -->
+        <button id="reset"
+            class="reset text-2xl bg-violet-700 px-4 py-2 font-sans rounded-md italic m-4 text-white">Reset
+            Score</button>
+    </div>
+    <div class="model absolute bg-slate-500 w-96 h-96 hidden" id="model">
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
